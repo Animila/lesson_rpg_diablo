@@ -1,5 +1,6 @@
 from rpg.person.Hero_pattern import Hero
 
+
 class Mag(Hero):
     '''Класс мага (наследует героя)'''
 
@@ -13,11 +14,26 @@ class Mag(Hero):
         return f'Я маг герой {self.thisName} и я знаю {len(self.thisSpells)} заклинаний'
 
     def add_magic(self, magic):
-        self.thisSpells.append(magic)
+        '''Добавление новых заклинаний'''
         self.thisExp += 10
         if self.thisExp == 100:
             self.thisPower += 1
             self.thisKhack += 2
             self.thisIntel += 4
             self.thisExp = 0
+
+        self.thisSpells.append(magic)
         print(f'{magic} добавлен в список заклинаний')
+
+
+    def attack(self, target, attack_magic, damage):
+        '''Атака мага'''
+        self.thisExp += 10
+        if self.thisExp == 100:
+            self.thisPower += 1
+            self.thisKhack += 2
+            self.thisIntel += 4
+            self.thisExp = 0
+
+        target.thisLive -= damage
+        return f'{self.thisName} нанес {attack_magic} {target.thisName} урон {damage}'
