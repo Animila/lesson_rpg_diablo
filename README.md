@@ -12,3 +12,11 @@
 2. Unit тесты
 3. Packages
 4. Function
+
+Структура проекта:
+> Character_pattern.py - базовый щаблон для всех персов
+>> Hero_pattern.py - базовый шаблон для игрока
+>>> Mag_pattern.py - маг
+>>> Warrion_pattern.py - воин
+>>> Archer_pattern.py - лук
+> .UnitTest - тесты для проверки работы классов
