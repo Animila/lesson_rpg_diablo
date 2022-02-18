@@ -11,3 +11,7 @@ class Mag(Hero):
     def scream(self):
         '''Вывод сообщения мага'''
         return f'Я маг герой {self.thisName} и я знаю {len(self.thisSpells)} заклинаний'
+
+    def add_magic(self, magic):
+        self.thisSpells.append(magic)
+        print(f'{magic} добавлен в список заклинаний')
