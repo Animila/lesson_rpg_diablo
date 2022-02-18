@@ -14,4 +14,10 @@ class Mag(Hero):
 
     def add_magic(self, magic):
         self.thisSpells.append(magic)
+        self.thisExp += 10
+        if self.thisExp == 100:
+            self.thisPower += 1
+            self.thisKhack += 2
+            self.thisIntel += 4
+            self.thisExp = 0
         print(f'{magic} добавлен в список заклинаний')
