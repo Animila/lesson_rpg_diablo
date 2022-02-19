@@ -4,7 +4,7 @@ from rpg.Pattern.person.Hero_pattern import Hero
 class Mag(Hero):
     '''Класс мага (наследует героя)'''
 
-    def __init__(self, name, live, mana, power, knack, intel, exp, level):
+    def __init__(self, name='маг', live=100, mana=0, power=1, knack=1, intel=5, exp=0, level=1):
         '''((Имя, здоровье, мана), сила, ловкость, интелект, опыт, уровень)'''
         super(Mag, self).__init__(name, live, mana, power, knack, intel, exp, level)
         self.thisSpells = []

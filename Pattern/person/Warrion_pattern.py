@@ -4,7 +4,7 @@ from rpg.Pattern.person.Hero_pattern import Hero
 class Warrion(Hero):
     '''Класс воина (наследует героя)'''
 
-    def __init__(self, name, live, mana, power, knack, intel, exp, level, weapon):
+    def __init__(self, name='воин', live=100, mana=0, power=5, knack=1, intel=1, exp=0, level=1, weapon='кулак'):
         '''((Имя, здоровье, мана), сила, ловкость, интелект, опыт, уровень), оружие'''
         super(Warrion, self).__init__(name, live, mana, power, knack, intel, exp, level)
         self.thisWeapon = weapon
