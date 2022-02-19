@@ -1,11 +1,11 @@
 class Character:
     '''Базовый персонаж'''
 
-    def __init__(self, name, live, exp):
+    def __init__(self, name, live, mana):
         '''Имя, здоровье, опыт'''
         self.thisName = name
         self.thisLive = live
-        self.thisExp = exp
+        self.thisMana = mana
 
     def Status(self):
         '''Вывод состояния базового персонажа'''
