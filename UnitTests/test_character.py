@@ -1,5 +1,5 @@
 import unittest
-from ..Character_pattern import Character
+from rpg.Pattern.Character_pattern import Character
 
 
 class TestCharacter(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from rpg.NPC.NPC_pattern import NPC
+from rpg.Pattern.NPC.NPC_pattern import NPC
 
 class TestNPC(unittest.TestCase):
     '''Тесты для базового класса NPC'''

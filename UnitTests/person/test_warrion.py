@@ -1,5 +1,5 @@
 import unittest
-from rpg.person.Warrion_pattern import Warrion
+from rpg.Pattern.person.Warrion_pattern import Warrion
 
 
 class TestWarrion(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from rpg.person.archer_pattern import Archer
+from rpg.Pattern.person.archer_pattern import Archer
 
 class TestArcher(unittest.TestCase):
     '''Тесты для класса лучника'''

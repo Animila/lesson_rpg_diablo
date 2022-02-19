@@ -1,4 +1,4 @@
-from rpg.person.Hero_pattern import Hero
+from rpg.Pattern.person.Hero_pattern import Hero
 
 class Archer(Hero):
     '''Класс Лучника (наследует героя)'''

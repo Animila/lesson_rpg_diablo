@@ -1,4 +1,4 @@
-from rpg.Character_pattern import Character
+from rpg.Pattern.Character_pattern import Character
 
 
 class NPC(Character):
