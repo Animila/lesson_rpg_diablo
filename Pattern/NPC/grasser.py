@@ -7,11 +7,10 @@ class Greaser(NPC):
     def __init__(self, name, live, mana, level):
         """(имя, здоровье, мана, уровень)"""
         super().__init__(name, live, mana, level)
-        self.thisRole = 'травник'
 
     def scream(self):
         """вызов"""
-        return f'Я {self.thisName}, обычный {self.thisRole}'
+        return f'Я {self.thisName}, обычный травник'
 
     def job(self, target, heal_potion):
         """Передает зелье ИГРОКУ"""
@@ -21,6 +20,6 @@ class Greaser(NPC):
     def make_potion(self, heal_potion, heal_power):
         """Добавляет зелье в вещи ТРАВНИКА"""
         # в переменную закидываем словарь из названия и силу
-        # засовываем в
+        # засовываем в словарь "словарь"
         up_potion = {heal_potion: heal_power}
         self.thisPack.update(up_potion)

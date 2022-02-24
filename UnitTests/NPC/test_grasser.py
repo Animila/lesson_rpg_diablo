@@ -23,9 +23,10 @@ class TestGreaser(unittest.TestCase):
         test_object.make_potion('Snake', 973)
 
         # Проверка на соответствие значений
-        # 1-2 - значения
+        # 1 - нахождение ключа в словаре
+        # 2 - нахождение значения в словаре
         # 3 - на длину словаря
-        self.assertEqual(test_object.thisPack["Grass"], 0)
+        self.assertIn("Grass", test_object.thisPack)
         self.assertEqual(test_object.thisPack["Snake"], 973)
         self.assertEqual(len(test_object.thisPack), 2)
 
