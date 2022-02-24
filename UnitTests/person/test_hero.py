@@ -3,10 +3,10 @@ from rpg.Pattern.person.Hero_pattern import Hero
 
 
 class TestHero(unittest.TestCase):
-    '''Тесты для класса Hero'''
+    """Тесты для класса Hero"""
 
     def test_scream(self):
-        '''Проверка, на соотвествие значений'''
+        """Проверка, на соответствие значений"""
 
         # ввод данных
         test_result = 'Я будущий герой Миша, но я выбрал специальность'
@@ -17,7 +17,7 @@ class TestHero(unittest.TestCase):
         self.assertEqual(test_status, test_result)
 
     def test_attack(self):
-        '''Проверка атаки героя на цель'''
+        """Проверка атаки героя на цель"""
 
         # ввод данных
         test_result = 'Я будущий герой Миша, и я без оружия, но я нанес Денис урон 34 своими руками'

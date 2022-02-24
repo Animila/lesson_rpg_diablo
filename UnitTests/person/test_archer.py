@@ -1,11 +1,12 @@
 import unittest
 from rpg.Pattern.person.archer_pattern import Archer
 
+
 class TestArcher(unittest.TestCase):
-    '''Тесты для класса лучника'''
+    """Тесты для класса лучника"""
 
     def test_scream(self):
-        '''проверка вывода'''
+        """Проверка вывода"""
         # ввод данных
         test_result = 'Я лучник герой Миша'
         test_object = Archer('Миша', 0, 0, 0, 0, 0, 0, 0)
@@ -15,7 +16,7 @@ class TestArcher(unittest.TestCase):
         self.assertEqual(test_status, test_result)
 
     def test_attach(self):
-        '''тест атаки'''
+        """Тест атаки"""
         # ввод данных
         test_object_1 = Archer('Миша', 100, 0, 0, 0, 0, 0, 0)
         test_object_2 = Archer('Никита', 100, 0, 0, 0, 0, 0, 0)
@@ -31,3 +32,7 @@ class TestArcher(unittest.TestCase):
         self.assertEqual(test_object_1.thisPower, 1)
         self.assertEqual(test_object_1.thisKhack, 2)
         self.assertEqual(test_object_1.thisIntel, 4)
+
+
+if __name__ == '__name__':
+    unittest.main()
