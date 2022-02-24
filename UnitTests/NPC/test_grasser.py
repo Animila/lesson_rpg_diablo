@@ -1,5 +1,5 @@
 import unittest
-from rpg.Pattern.NPC.grasser_pattern import Greaser
+from rpg.Pattern.NPC.grasser import Greaser
 
 
 class TestGreaser(unittest.TestCase):

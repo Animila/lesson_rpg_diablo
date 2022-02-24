@@ -1,5 +1,5 @@
 import unittest
-from rpg.Pattern.Enemy.devil_pattern import Devil
+from rpg.Pattern.Enemy.devil import Devil
 
 
 class TestDevil(unittest.TestCase):

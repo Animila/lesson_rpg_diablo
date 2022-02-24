@@ -1,6 +1,6 @@
-from Pattern.person.archer_pattern import Archer
-from Pattern.person.mag_pattern import Mag
-from Pattern.person.Warrior_pattern import Warrior
+from Pattern.person.archer import Archer
+from Pattern.person.mag import Mag
+from Pattern.person.Warrior import Warrior
 from art import logo, new_game
 import os
 

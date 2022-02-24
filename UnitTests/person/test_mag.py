@@ -1,5 +1,5 @@
 import unittest
-from rpg.Pattern.person.mag_pattern import Mag
+from rpg.Pattern.person.mag import Mag
 
 
 class TestMag(unittest.TestCase):

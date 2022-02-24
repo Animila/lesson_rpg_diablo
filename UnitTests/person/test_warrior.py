@@ -1,5 +1,5 @@
 import unittest
-from rpg.Pattern.person.Warrior_pattern import Warrior
+from rpg.Pattern.person.Warrior import Warrior
 
 
 class TestWarrior(unittest.TestCase):

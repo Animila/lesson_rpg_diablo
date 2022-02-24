@@ -1,5 +1,5 @@
 import unittest
-from rpg.Pattern.person.archer_pattern import Archer
+from rpg.Pattern.person.archer import Archer
 
 
 class TestArcher(unittest.TestCase):
