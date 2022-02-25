@@ -16,14 +16,14 @@ class TestWarrior(unittest.TestCase):
         # 1. Выводится первоначальные значения
         # 2. Производится атака до 100 опыта
         # 3. Выводится итоговые значения после работы
-        print(test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKhack, test_object_1.thisIntel)
+        print(test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKnack, test_object_1.thisIntel)
         for i in range(10):
             test_object_1.attack(test_object_2, 33)
-        print(test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKhack, test_object_1.thisIntel)
+        print(test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKnack, test_object_1.thisIntel)
 
         # Проверка данных
         self.assertEqual(test_object_1.thisPower, 4)
-        self.assertEqual(test_object_1.thisKhack, 3)
+        self.assertEqual(test_object_1.thisKnack, 3)
         self.assertEqual(test_object_1.thisIntel, 2)
         self.assertEqual(test_object_1.thisExp, 0)
 

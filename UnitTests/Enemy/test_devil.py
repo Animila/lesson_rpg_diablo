@@ -6,7 +6,7 @@ class TestDevil(unittest.TestCase):
     """Тесты для класса Демона"""
 
     def test_steal_mana(self):
-        """проверка снятия маны"""
+        """Проверка снятия маны"""
         test_object_1 = Devil('Misha', 0, 0, 0)
         test_object_2 = Devil('Nikita', 0, 100, 0)
         test_object_1.steal_mana(test_object_2, 30)

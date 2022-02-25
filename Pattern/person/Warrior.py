@@ -19,7 +19,7 @@ class Warrior(Hero):
         self.thisExp += 10
         if self.thisExp == 100:
             self.thisPower += 3
-            self.thisKhack += 2
+            self.thisKnack += 2
             self.thisIntel += 1
             self.thisExp = 0
         return f'{self.thisName} нанес {self.thisWeapon} {target.thisName} урон {damage}'

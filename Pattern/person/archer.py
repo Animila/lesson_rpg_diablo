@@ -17,7 +17,7 @@ class Archer(Hero):
         self.thisExp += 10
         if self.thisExp == 100:
             self.thisPower += 1
-            self.thisKhack += 2
+            self.thisKnack += 2
             self.thisIntel += 4
             self.thisExp = 0
         target.thisLive -= damage

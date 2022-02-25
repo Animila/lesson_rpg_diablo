@@ -22,15 +22,15 @@ class TestArcher(unittest.TestCase):
         test_object_2 = Archer('Никита', 100, 0, 0, 0, 0, 0, 0)
 
         # эмуляция работы
-        print('3:', test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKhack, test_object_1.thisIntel)
+        print('3:', test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKnack, test_object_1.thisIntel)
         for i in range(10):
             test_object_1.attack(test_object_2, 34)
-        print('4:', test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKhack, test_object_1.thisIntel)
+        print('4:', test_object_1.thisExp, test_object_1.thisPower, test_object_1.thisKnack, test_object_1.thisIntel)
 
         # проверка
         self.assertEqual(test_object_1.thisExp, 0)
         self.assertEqual(test_object_1.thisPower, 1)
-        self.assertEqual(test_object_1.thisKhack, 2)
+        self.assertEqual(test_object_1.thisKnack, 2)
         self.assertEqual(test_object_1.thisIntel, 4)
 
 

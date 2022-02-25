@@ -8,12 +8,12 @@ class TestMag(unittest.TestCase):
     def test_scream(self):
         """Проверка на соответствие"""
         # 4. На соответствие
-        test_result = 'Я маг герой Миша и я знаю 2 заклинаний'
+        test_result = 'Я маг герой Миша и я знаю 0 заклинаний'
         test_object = Mag('Миша', 0, 0, 0, 0, 0, 0, 0)
         test_status = test_object.scream()
         self.assertEqual(test_status, test_result)
 
-    def test_magic_scream(self):
+    def test_magic(self):
         """Проверка изучения магии"""
         # ввод данных
         test_object = Mag('Миша', 0, 0, 0, 0, 0, 0, 0)
@@ -34,15 +34,15 @@ class TestMag(unittest.TestCase):
         test_object = Mag('Миша', 0, 0, 0, 0, 0, 0, 0)
 
         # эмуляция работы
-        print(test_object.thisExp, test_object.thisPower, test_object.thisKhack, test_object.thisIntel)
+        print(test_object.thisExp, test_object.thisPower, test_object.thisKnack, test_object.thisIntel)
         for i in range(10):
             test_object.add_magic('воздух')
-        print(test_object.thisExp, test_object.thisPower, test_object.thisKhack, test_object.thisIntel)
+        print(test_object.thisExp, test_object.thisPower, test_object.thisKnack, test_object.thisIntel)
 
         # проверка
         self.assertEqual(test_object.thisExp, 0)
         self.assertEqual(test_object.thisPower, 1)
-        self.assertEqual(test_object.thisKhack, 2)
+        self.assertEqual(test_object.thisKnack, 2)
         self.assertEqual(test_object.thisIntel, 4)
 
     def test_attach(self):
@@ -70,15 +70,15 @@ class TestMag(unittest.TestCase):
         test_object_4 = Mag('Никита', 100, 0, 0, 0, 0, 0, 0)
 
         # Эмуляция
-        print('3:', test_object_3.thisExp, test_object_3.thisPower, test_object_3.thisKhack, test_object_3.thisIntel)
+        print('3:', test_object_3.thisExp, test_object_3.thisPower, test_object_3.thisKnack, test_object_3.thisIntel)
         for i in range(10):
             test_object_3.attack(test_object_4, 'воздух', 34)
-        print('4:', test_object_3.thisExp, test_object_3.thisPower, test_object_3.thisKhack, test_object_3.thisIntel)
+        print('4:', test_object_3.thisExp, test_object_3.thisPower, test_object_3.thisKnack, test_object_3.thisIntel)
 
         # Проверка
         self.assertEqual(test_object_3.thisExp, 0)
         self.assertEqual(test_object_3.thisPower, 1)
-        self.assertEqual(test_object_3.thisKhack, 2)
+        self.assertEqual(test_object_3.thisKnack, 2)
         self.assertEqual(test_object_3.thisIntel, 4)
 
 
