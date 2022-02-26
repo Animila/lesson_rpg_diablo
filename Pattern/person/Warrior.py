@@ -5,8 +5,8 @@ class Warrior(Hero):
     """Класс воина (наследует героя)"""
 
     def __init__(self, name='воин', live=100, mana=0, power=5, knack=1, intel=1, exp=0, level=1, weapon='кулак'):
-        """((Имя, здоровье, мана), сила, ловкость, интелект, опыт, уровень), оружие"""
-        super(Warrior, self).__init__(name, live, mana, power, knack, intel, exp, level)
+        """((Имя, здоровье, мана), сила, ловкость, интеллект, опыт, уровень), оружие"""
+        super().__init__(name, live, mana, power, knack, intel, exp, level)
         self.thisWeapon = weapon
 
     def scream(self):
