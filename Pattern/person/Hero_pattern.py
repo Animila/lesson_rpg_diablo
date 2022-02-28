@@ -1,17 +1,19 @@
 from rpg.Pattern.Character_pattern import Character
+from rpg.package import Package
 
 
-class Hero(Character):
+class Hero(Character, Package):
     """Класс героя (наследует базового персонажа)"""
 
     def __init__(self, name, live, mana, power, knack, intel, exp, level):
-        """(Имя, здоровье, мана), сила, ловкость, интелект, опыт, уровень"""
+        """(Имя, здоровье, мана), сила, ловкость, интеллект, опыт, уровень"""
         super().__init__(name, live, mana)
         self.thisPower = power
         self.thisKnack = knack
         self.thisIntel = intel
         self.thisExp = exp
         self.thisLevel = level
+        self.Pack = Package()
 
     def scream(self):
         """Вывод сообщения героя"""

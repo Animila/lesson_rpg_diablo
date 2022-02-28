@@ -14,4 +14,4 @@ class TravelMag(NPC):
     def job(self, target, product, state):
         """Добавление в вещи игрока предмета"""
         trade_force = {product: state}
-        target.thisPack.update(trade_force)
+        target.Pack.thisPack.update(trade_force)

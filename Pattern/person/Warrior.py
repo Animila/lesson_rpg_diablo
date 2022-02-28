@@ -13,8 +13,9 @@ class Warrior(Hero):
         """Вывод сообщения о персонаже"""
         return f'Я герой {self.thisName} и я воин с {self.thisWeapon}'
 
-    def attack(self, target, damage):
+    def attack(self, target, weapon, damage):
         """Метод атаки"""
+        self.thisWeapon = weapon
         target.thisLive -= damage
         self.thisExp += 10
         if self.thisExp == 100:

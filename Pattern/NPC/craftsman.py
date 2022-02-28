@@ -14,4 +14,4 @@ class Craftsman(NPC):
     def job(self, target, tool, state):
         """Добавление в вещи игрока предмета"""
         weapon = {tool: state}
-        target.thisPack.update(weapon)
+        target.Pack.thisPack.update(weapon)
