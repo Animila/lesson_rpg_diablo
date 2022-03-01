@@ -1,4 +1,5 @@
 from rpg.Pattern.NPC.craftsman import Craftsman
+from rpg.Pattern.person.Warrior import Warrior
 import unittest
 
 
@@ -20,8 +21,8 @@ class TestCraftsmen(unittest.TestCase):
         """Проверка добавления предмета в инвентарь"""
         # ввод данных
         test_object_1 = Craftsman("Misha", 100, 0, 0)
-        test_object_2 = Craftsman("Nikita", 100, 0, 0)
+        test_object_2 = Warrior()
         test_object_1.job(test_object_2, "sword", 100)
 
         # Проверка
-        self.assertIn("sword", test_object_2.thisPack)
+        self.assertIn("sword", test_object_2.Pack.thisPack)

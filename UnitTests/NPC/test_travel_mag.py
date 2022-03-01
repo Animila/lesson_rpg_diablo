@@ -1,6 +1,8 @@
 from rpg.Pattern.NPC.travel_mag import TravelMag
 import unittest
 
+from rpg.Pattern.person.Warrior import Warrior
+
 
 class TestTravelMag(unittest.TestCase):
     """Тесты для класса торговца"""
@@ -14,9 +16,9 @@ class TestTravelMag(unittest.TestCase):
 
     def test_job(self):
         test_object_1 = TravelMag("Misha", 100, 0, 0)
-        test_object_2 = TravelMag("Nikita", 100, 0, 0)
+        test_object_2 = Warrior()
         test_object_1.job(test_object_2, "sword", 100)
 
         # Проверка
-        self.assertIn("sword", test_object_2.thisPack)
+        self.assertIn("sword", test_object_2.Pack.thisPack)
 

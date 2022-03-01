@@ -1,5 +1,7 @@
 from rpg.Pattern.NPC.trader import Trader
+from rpg.Pattern.person.Warrior import Warrior
 import unittest
+
 
 
 class TestTrader(unittest.TestCase):
@@ -14,9 +16,9 @@ class TestTrader(unittest.TestCase):
 
     def test_job(self):
         test_object_1 = Trader("Misha", 100, 0, 0)
-        test_object_2 = Trader("Nikita", 100, 0, 0)
+        test_object_2 = Warrior()
         test_object_1.job(test_object_2, "sword", 100)
 
         # Проверка
-        self.assertIn("sword", test_object_2.thisPack)
+        self.assertIn("sword", test_object_2.Pack.thisPack)
 
