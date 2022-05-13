@@ -19,7 +19,7 @@ DDDDDDDDDDDDD      IIIIIIIIIIAAAAAAA                   AAAAAAABBBBBBBBBBBBBBBBB 
                                                                                                                               
                                                                                                                              '''
 
-new_game = '''                                                                                                           
+new_game_logo = '''                                                                                                           
                                                                                                            
 NNNNNNNN        NNNNNNNNEEEEEEEEEEEEEEEEEEEEEEWWWWWWWW                           WWWWWWWW                  
 N:::::::N       N::::::NE::::::::::::::::::::EW::::::W                           W::::::W                  

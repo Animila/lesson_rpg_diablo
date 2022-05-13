@@ -4,5 +4,7 @@ class Package:
 
     def info(self):
         print("Ваша сумка: ")
+        if self.thisPack == {}:
+            print('- Ничего нет')
         for element in self.thisPack:
             print(f"\t- {element}: {self.thisPack[element]}")

@@ -1,3 +1,5 @@
+import random
+
 from rpg.Pattern.Enemy.Enemy_pattern import Enemy
 
 
@@ -8,6 +10,8 @@ class Devil(Enemy):
         """(Имя, здоровье, мана, уровень)"""
         super().__init__(name, live, mana, level)
 
-    def steal_mana(self, target, damage):
+    def steal_mana(self, target):
         """Отбирает ману у цели"""
-        target.thisMana -= damage
+        damage = random.randint(1, 30)
+        target.thisLive -= damage
+        print(f'Демон атаковал {target.thisName} на {damage}')

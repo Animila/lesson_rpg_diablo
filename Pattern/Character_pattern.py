@@ -18,7 +18,11 @@ class Character:
     def drink_heal_potion(self, potion):
         """Использование зелья для восстановления жизни"""
         self.thisLive += potion
+        if self.thisLive >= 100:
+            self.thisLive = 100
+        print(f'Восстановлено здоровья: {potion}')
 
     def drink_mana_potion(self, potion_mana):
         """Использование зелья для восстановления манны"""
         self.thisMana += potion_mana
+        print(f'Восстановлено маны: {potion_mana}')

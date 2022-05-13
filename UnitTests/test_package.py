@@ -1,5 +1,4 @@
 from rpg.Pattern.person.Warrior import Warrior
-from rpg.package import Package
 from rpg.Pattern.NPC.craftsman import Craftsman
 import unittest
 
