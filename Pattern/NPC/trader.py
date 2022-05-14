@@ -15,3 +15,4 @@ class Trader(NPC):
         """Добавление в вещи игрока предмета"""
         trade_force = {product: state}
         target.Pack.thisPack.update(trade_force)
+        print(f'Торговец вытащил из своего ящика {product} с {state}')

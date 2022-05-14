@@ -15,3 +15,4 @@ class Craftsman(NPC):
         """Добавление в вещи игрока предмета"""
         weapon = {tool: damage}
         target.Pack.thisPack.update(weapon)
+        print(f'Торговец сделал вам {tool} с уроном в {damage}')

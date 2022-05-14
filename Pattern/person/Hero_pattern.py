@@ -15,7 +15,7 @@ class Hero(Character, Package):
         self.thisLevel = level
         self.Pack = Package()
         self.Pack.thisPack['кулак'] = 10
-        self.thisWeapon = {weapon, self.Pack.thisPack[weapon]}
+        self.thisWeapon = [weapon, self.Pack.thisPack[weapon]]
 
     def scream(self):
         """Вывод сообщения героя"""
@@ -25,18 +25,9 @@ class Hero(Character, Package):
         """Метод атаки"""
         self.Pack.info()
         user_action = input('Выбор оружия:\n>').lower()
-        if user_action in self.Pack.thisPack:
-            self.thisWeapon = user_action
-            target.thisLive -= self.Pack.thisPack[user_action]
-            self.thisExp += 10
-            if self.thisExp == 100:
-                self.thisPower += 3
-                self.thisKnack += 2
-                self.thisIntel += 1
-                self.thisExp = 0
-        else:
-            weapon = self.thisWeapon[0]
-            damage = self.thisWeapon[1]
+        weapon = self.thisWeapon[0]
+        damage = self.thisWeapon[1]
+        if user_action not in self.Pack.thisPack:
             self.thisWeapon = weapon
             target.thisLive -= damage
             self.thisExp += 10
@@ -45,4 +36,14 @@ class Hero(Character, Package):
                 self.thisKnack += 2
                 self.thisIntel += 1
                 self.thisExp = 0
-        print(f'{self.thisName} нанес {self.thisWeapon[0]} {target.thisName} урон {self.thisWeapon[1]}')
+        else:
+            self.thisWeapon = user_action
+            target.thisLive -= self.Pack.thisPack[user_action]
+            self.thisExp += 10
+            if self.thisExp == 100:
+                self.thisPower += 3
+                self.thisKnack += 2
+                self.thisIntel += 1
+                self.thisExp = 0
+
+        print(f'{self.thisName} нанес {weapon} {target.thisName} урон {damage}')

@@ -3,6 +3,7 @@ from random import randint
 from Users import UserController
 from listsPlace import Places
 
+
 class Game(UserController, Places):
     def __init__(self):
         super().__init__()
