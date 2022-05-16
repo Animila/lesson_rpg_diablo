@@ -25,4 +25,6 @@ class Character:
     def drink_mana_potion(self, potion_mana):
         """Использование зелья для восстановления манны"""
         self.thisMana += potion_mana
+        if self.thisMana >= 100:
+            self.thisMana = 100
         print(f'Восстановлено маны: {potion_mana}')
